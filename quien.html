@@ -47,9 +47,55 @@
 		#apDiv6 {
 			color: #555555;
 		}
+		
+		#menu {
+			color: #555555;
+		}
+		
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
 
 		.bgwidth { width: 100%; }
 		.bgheight { height: 100%; }
+		
+		
+		#content-slider {
+			width: 650px;
+			overflow: hidden;
+			height: 300px;
+		}
+
+		#content-slider-inside {
+			list-style: none;
+			height: 320px; 		
+			overflow: scroll;	
+			overflow-y: hidden;	
+		}
+
+		#content-slider-inside li {
+			width: 600px;
+			height: 300px;
+		}
+	
+		.menu li a{
+			font-size: 24pt;
+			color: #555555;
+		}
+		
+		
+		.menu li a:hover {
+			color: #d5df22;
+			text-decoration: underline;
+		}
+	
+		.activo {
+			color: #d5df22;
+		}				
+				
 	</style>
 	
 		
@@ -58,13 +104,14 @@
 	<script src="js/cufon-yui.js" type="text/javascript"></script>
 	<script src="js/franklin_400.font.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		Cufon.replace('p'); // Works without a selector engine
+		Cufon.replace('li', { hover: true}); // Works without a selector engine
 	</script>
+	<link href="jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
 	
-	
-
 </head>
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body>
 	
 <div class="centerbox">
 
@@ -72,25 +119,48 @@
 <!-- End Save for Web Slices -->
 <div id="apDiv3" style="position: absolute; left: 307px; top: 52px; width: 195px; height: 190px; z-index: 3; vertical-align: middle"><img src="imagenes/quien_03.png" width="195" height="190" alt=""></div>
 <div id="apDiv6" style="position: absolute; left: 631px; top: 62px; width: 587px; height: 490px; z-index: 6; vertical-align: middle">
-	
-	<a href="contacto.html" target="_self">
-	<img src="imagenes/nora.png" onmouseover="this.src='imagenes/nora_a.png'" onmouseout="this.src='imagenes/nora.png'" />
+
+<div class="menu">
+	<ul>
+	<li>
+	<a href="#texto1">	Nora Steinbrun (Madrid-ES)
 	</a>
-	<a href="contacto.html" target="_self">
-	<img src="imagenes/andrea.png" onmouseover="this.src='imagenes/andrea_a.png'" onmouseout="this.src='imagenes/andrea.png'" />
+	</li>
+	<li>
+	<a href="#texto2">
+	Andrea Pellegrini (Montpellier-FR)
 	</a>
-	<a href="contacto.html" target="_self">
-	<img src="imagenes/viviana.png" onmouseover="this.src='imagenes/viviana_a.png'" onmouseout="this.src='imagenes/viviana.png'" />
+	</li>
+	<li>
+	<a href="#texto3">
+	Viviana Albarcez (Atenas-GR)
 	</a>
-	
-	<div class="texto1">
-	<p>Formada académicamente en Argentina (Universidad de Buenos Aires, Facultad de Filosofía y Letras; Instituto de Enseñanza Superior Nº 2 Mariano Acosta; Instituto Superior del Profesorado Dr. Joaquín V. Gonzalez), Uruguay (Taller de poesía Urbana la Murga/Montevideo) y Grecia (Instituto Cervantes, Atenas), ha desarrollado innovadores métodos de enseñanza de la lengua española para extranjeros, utilizando el teatro como herramienta fundamental en la dinámica del aprendizaje y aplicando estos métodos a laboratorios de idiomas en diferentis instituciones del ámbito nacional y privado en América Latina, Europa y Japón. A partir de su experiencia en el área docente, ha publicado los artículos "Métodos de enseñanza para un español al alcance de todos" y "El español como herramienta de trabajo" en el boletín del Taller El Tintero, Paso de los Toros, Uruguay. Ha sido premiada así mismo por su onra poética: "Heavy Metal Poesía", Buen os Aires, Argentina, 1993, y "Acueductos, Poesía Alternativa", Atenas, Grecia, 2001. La ciudad de Puerto España (Trinidad y Tobago merece una men-)</p>
+	</li>
+	</ul>
+</div>	
+
+	<div id="content-slider">
+		<ul id="content-slider-inside">
+			<li id="texto1"><h4>Nora Steribrun</h4>
+				Cursó la carrera de Traductor Literario y Técnico-Científico en Inglés en Buenos Aires, Argentina. Trabajó durante varios años en el ámbito de la televisión y, en 1990, se trasladó a España, contratada por una productora cinematográfica madrileña. Unos años más tarde decidió centrar su trabajo exclusivamente en la traducción y, hasta la fecha, lleva más de cien libros traducidos y publicados, además de numerosos artículos, páginas web, guiones de cine, trabajos de publicidad, etc. Ha actuado asimismo como intérprete de italiano e inglés, tanto en el ámbito empresarial como en el marco de la televisión. Además de realizar cursos de perfeccionamiento relacionados con su profesión, ha potenciado su afición por la escritura a través de talleres literarios centrados específicamente en el género del relato.
+	Como socia fundadora de ACTEA COACHING LINGÜÍSTICO, tiene a su cargo los proyectos de traducción e interpretación en inglés, además de la coordinación general de los cursos, las actividades culturales y de ocio y los contenidos del sitio web.</li>
+			<li id="texto2" ><h4>Andrea Pellegrini</h4>
+				Cursa estudios en Buenos Aires (Argentina) y Montpellier (Francia) y se especializa en los campos de la lingüística y la pedagogía. Profesionalmente, desarrolla su carrera en el ámbito de la enseñanza del idioma español, la difusión de la cultura hispánica y la traducción e interpretación. Completa su formación en la universidad Paul Valéry de Montpellier y realiza maestrías en Psicoanálisis y Estética y también en Lingüística. Es licenciada en Filología. 
+
+
+En su extensa experiencia profesional, destaca su actividad docente tanto en el Ayuntamiento de Montpellier como en la Escuela Nacional Superior de Agronomía y la Facultad de Ingeniería de la misma ciudad. Corresponsal de la revista LA MAGA (Buenos Aires, Argentina), ha sido, asimismo intérprete en el Tribunal de Primera Instancia de Montpellier, en la Copa Mundial de Fútbol FRANCIA 1998 y en el Festival Internacional de Cine Mediterráneo.  Ha traducido numerosos artículos y tesis universitarias (L'Harmattan, Presses Universitaires)
+
+
+Como socia fundadora de ACTEA COACHING LINGÜÍSTICO tiene a su cargo la supervisión y el seguimiento de los cursos de coaching, así como también la actualización de materiales didácticos y la investigación de  métodos de enseñanza.</li>
+			<li id="texto3" ><h4>Viviana Albarcez</h4>
+				Formada académicamente en Argentina (Universidad de Buenos Aires, Facultad de Filosofía y Letras; Instituto de Enseñanza Superior Nº 2 Mariano Acosta; Instituto Superior del Profesorado Dr. Joaquín V. González), Uruguay (Taller de Poesía Urbana la Murga/Montevideo) y Grecia (Instituto Cervantes, Atenas), ha desarrollado innovadores métodos de enseñanza de la lengua española para extranjeros utilizando el teatro como herramienta fundamental en la dinámica del aprendizaje y aplicando estos métodos a laboratorios de idiomas en diferentes instituciones del ámbito nacional y privado en América Latina, Europa y Japón. A partir de su experiencia en el área docente, ha publicado los artículos “Métodos de enseñanza para un español al alcance de todos” y “El español como herramienta de trabajo” en el boletín del Taller El Tintero, Paso de los Toros, Uruguay.  Asimismo, ha sido premiada por su obra poética: “Heavy Metal Poesía”, Buenos Aires, Argentina, 1993, y “Acueductos, Poesía Alternativa”, Atenas, Grecia, 2001. La ciudad de Puerto España (Trinidad y Tobago) merece una mención particular por haberle brindado la oportunidad de producir una pieza de teatro urbana de corte trágico: Mr. Chassman y Chirolita: cuentos del Cementerio Viejo. 
+		Como socia fundadora de ACTEA COACHING LINGÜÍSTICO, tiene a su cargo la creación, el seguimiento y el desarrollo de los CURSOS DE CINE y LITERATURA.</li>
+		</ul>
 	</div>
-	
 	</div>
 <div id="apDiv9" style="position: absolute; left: 318px; top: 235px; width: 181px; height: 71px; z-index: 9">
 	<a href="menu.html" target="_self">
-	<img src="imagenes/quien_09.png" onmouseover="this.src='imagenes/quien_09_a.png'" onmouseout="this.src='imagenes/quien_09.png'" />
+	<img src="imagenes/quien_09.png" onmouseover="this.src='imagenes/quien_09_a.png'" onmouseout="this.src='imagenes/quien_09.png'"/>
 	</a>
 	</div>
 <div id="apDiv11" style="position: absolute; left: 319px; top: 306px; width: 181px; height: 174px; z-index: 11">
@@ -125,6 +195,23 @@
 	</a>
 	</div>
 	
-</div>	
-</body>
+</div>
+
+<script>
+    (function($){
+        $(window).load(function(){
+            $("#content-slider-inside li").mCustomScrollbar({
+            	theme: "dark-thick"
+            });
+        });
+    })(jQuery);
+</script>
+
+<script>
+$('.menu li a').on('click', function(){
+    $(this).addClass('activo').siblings().removeClass('activo');
+});
+</script>
+
+</body>
 </html>
