@@ -51,6 +51,10 @@
 
 		.bgwidth { width: 100%; }
 		.bgheight { height: 100%; }
+		
+		cboxWrapper {
+			z-index: 200;
+		}
 	</style>
 	
 		
@@ -61,6 +65,18 @@
 	<script type="text/javascript">
 		Cufon.replace('p'); // Works without a selector engine
 	</script>
+	<script src="js/jquery.colorbox.js"></script>
+	
+	<link rel="stylesheet" href="colorbox.css">
+	
+	<script>
+			$(document).ready(function(){
+
+				$(".group1").colorbox({iframe:true, innerWidth: 650, innerHeight: 550});
+				
+			});
+	</script>
+				 
 
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
@@ -70,75 +86,97 @@
 	<img src="imagenes/cursos.png" id="bg" alt="">
 
 
-<div id="apDiv2" style="position: absolute; left: 283px; top: 0px; width: 262px; height: 213px; z-index: 2"><img src="imagenes/cursos_02.png" width="262" height="213" alt=""></div>
-<div id="apDiv3" style="position: absolute; left: 545px; top: 0px; width: 679px; height: 231px; z-index: 3; vertical-align: middle">
+<div id="apDiv2" style="position: absolute; left: 283px; top: 0px; width: 262px; height: 213px"><img src="imagenes/cursos_02.png" width="262" height="213" alt=""></div>
+<div id="apDiv3" style="position: absolute; left: 545px; top: 0px; width: 679px; height: 231px; vertical-align: middle">
 	<p>El coaching lingüístico se ofrece en 35 horas semanales de clase, de las cuales 10 horas están dedicadas a la práctica social, es decir, a cualquier actividad lúdica, cultural o de ocio llevada a cabo en el país de residencia del alumno.</p>
  
 	<p>Ofertamos, además, cursos superiores de cine y literatura o análisis de textos técnicos para niveles B2, C1 y C2. Estas actividades son complementarias al coaching, pero también pueden ser contratadas de forma independiente por aquellas personas que cuenten con un nivel medio o elevado de español y deseen disponer de una herramienta diferente de perfeccionamiento y práctica del idioma.</p>
 	</div>
 
-<div id="apDiv6" style="position: absolute; left: 245px; top: 213px; width: 206px; height: 125px; z-index: 6; vertical-align: middle">
+<div id="apDiv6" style="position: absolute; left: 245px; top: 213px; width: 206px; height: 125px; vertical-align: middle">
 	<a href="menu.html" target="_self">
 	<img src="imagenes/cursos_05.png" width="206" height="125" alt="">
 	</a>
 	</div>
 
 
-<div id="apDiv12" style="position: absolute; left: 604px; top: 282px; width: 93px; height: 349px; z-index: 12; vertical-align: middle"><img src="imagenes/cursos_09.png" width="93" height="349" alt=""></div>
-<div id="apDiv13" style="position: absolute; left: 697px; top: 282px; width: 189px; height: 59px; z-index: 13"><img src="imagenes/cursos_10.png" width="189" height="59" alt=""></div>
 
-<div id="apDiv16" style="position: absolute; left: 697px; top: 341px; width: 321px; height: 35px; z-index: 16"><img src="imagenes/cursos_12.png" width="321" height="35" alt=""></div>
-
-<div id="apDiv19" style="position: absolute; left: 697px; top: 376px; width: 304px; height: 25px; z-index: 19; vertical-align: middle"><img src="imagenes/cursos_14.png" width="304" height="25" alt=""></div>
-<div id="apDiv20" style="position: absolute; left: 968px; top: 376px; width: 196px; height: 145px; z-index: 20; vertical-align: middle">
-	<a href="cursos">
-	<img src="imagenes/cursos_15.png" width="196" height="145" alt="">
+<div id="apDiv13" style="position: absolute; left: 634px; top: 282px; width: 189px; height: 59px">
+	<a href="cursos/panyfutbol.html" title="Pan y Futbol" class="group1">
+		<img src="imagenes/cursos_10.png" width="189" height="59" alt="">
 	</a>
 	</div>
 
-<div id="apDiv23" style="position: absolute; left: 245px; top: 338px; width: 206px; height: 144px; z-index: 23; vertical-align: middle">
+<div id="apDiv16" style="position: absolute; left: 634px; top: 341px; width: 321px; height: 35px">
+	<a href="cursos/alacena.html" title="La alacena de Don Quijote" class="group1">
+	<img src="imagenes/cursos_12.png" width="321" height="35" alt="">
+	</a>
+	</div>
+
+<div id="apDiv19" style="position: absolute; left: 634px; top: 376px; width: 304px; height: 25px; vertical-align: middle"><img src="imagenes/cursos_14.png" width="304" height="25" alt=""></div>
+<div id="apDiv20" style="position: absolute; left: 968px; top: 376px; width: 196px; height: 145px; vertical-align: middle">
+	
+	<img src="imagenes/cursos_15.png" width="196" height="145" alt="">
+	
+	</div>
+
+<div id="apDiv23" style="position: absolute; left: 245px; top: 338px; width: 206px; height: 144px; vertical-align: middle">
 	<a href="menu.html">
 	<img src="imagenes/cursos_17.png" width="206" height="144" alt="">
 	</a>
 	</div>
 
-<div id="apDiv25" style="position: absolute; left: 697px; top: 401px; width: 189px; height: 63px; z-index: 25; vertical-align: middle"><img src="imagenes/cursos_18.png" width="189" height="63" alt=""></div>
+<div id="apDiv25" style="position: absolute; left: 634px; top: 401px; width: 189px; height: 63px; vertical-align: middle">
+	<a href="cursos/jaquemate.html" title="Jaque Mate" class="group1">
+	<img src="imagenes/cursos_18.png" width="189" height="63" alt="">
+	</a>
+	</div>
 
-<div id="apDiv31" style="position: absolute; left: 697px; top: 464px; width: 188px; height: 63px; z-index: 31; vertical-align: middle"><img src="imagenes/cursos_22.png" width="188" height="63" alt=""></div>
+<div id="apDiv31" style="position: absolute; left: 634px; top: 464px; width: 188px; height: 63px; vertical-align: middle">
+	<a href="cursos/sambuca.html" title="Sambuca" class="group1">
+	<img src="imagenes/cursos_22.png" width="188" height="63" alt="">
+	
+	</div>
 
-<div id="apDiv38" style="position: absolute; left: 697px; top: 528px; width: 188px; height: 59px; z-index: 38; vertical-align: middle"><img src="imagenes/cursos_26.png" width="188" height="59" alt=""></div>
+<div id="apDiv38" style="position: absolute; left: 634px; top: 528px; width: 188px; height: 59px;vertical-align: middle">
+	<a href="cursos/exsilium.html" title="Exsilium" class="group1">
+	<img src="imagenes/cursos_26.png" width="188" height="59" alt="">
+	
+	</div>
 
 
-<div id="apDiv41" style="position: absolute; left: 254px; top: 482px; width: 83px; height: 24px; z-index: 41; vertical-align: middle">
+<div id="apDiv41" style="position: absolute; left: 254px; top: 482px; width: 83px; height: 24px;  vertical-align: middle">
 	<a href="menu.html" target="_self">
 	<img src="imagenes/cursos_28.png" width="83" height="24" alt="">
 	</a>
 	</div>
 
-<div id="apDiv43" style="position: absolute; left: 347px; top: 482px; width: 72px; height: 24px; z-index: 43; vertical-align: middle">
+<div id="apDiv43" style="position: absolute; left: 347px; top: 482px; width: 72px; height: 24px;  vertical-align: middle">
 	<a href="en" target="_self">
 	<img src="imagenes/cursos_30.png" width="72" height="24" alt="">
 	</a>
 	</div>
 
-<div id="apDiv45" style="position: absolute; left: 429px; top: 482px; width: 86px; height: 24px; z-index: 45; vertical-align: middle">
+<div id="apDiv45" style="position: absolute; left: 429px; top: 482px; width: 86px; height: 24px;  vertical-align: middle">
 	<a href="fr" target="_self">
 	<img src="imagenes/cursos_32.png" width="86" height="24" alt="">
 	</a>
 	</div>
 
 
-<div id="apDiv57" style="position: absolute; left: 318px; top: 524px; width: 40px; height: 37px; z-index: 57; vertical-align: middle">
+<div id="apDiv57" style="position: absolute; left: 318px; top: 524px; width: 40px; height: 37px;  vertical-align: middle">
 	<a href="http://facebook.com/" target="_blank">
 	<img src="imagenes/cursos_41.png" width="40" height="37" alt="">
 	</a>
 	</div>
 
-<div id="apDiv59" style="position: absolute; left: 367px; top: 524px; width: 37px; height: 37px; z-index: 59; vertical-align: middle">
+<div id="apDiv59" style="position: absolute; left: 367px; top: 524px; width: 37px; height: 37px;  vertical-align: middle">
 	<a href="http://blogger.com/" target="_blank">
 	<img src="imagenes/cursos_43.png" width="37" height="37" alt="">
 	</a>
-	</div><div id="apDiv62" style="position: absolute; left: 697px; top: 587px; width: 224px; height: 44px; z-index: 62; vertical-align: middle"><img src="imagenes/cursos_45.png" width="224" height="44" alt=""></div>
+	</div>
+<!--<div id="apDiv62" style="position: absolute; left: 697px; top: 587px; width: 224px; height: 44px; vertical-align: middle"><img src="imagenes/cursos_45.png" width="224" height="44" alt=""></div>
+-->
 
 </div>
 </body>
